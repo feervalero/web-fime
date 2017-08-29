@@ -1,8 +1,51 @@
-body {
-  padding: 50px;
+*,html,body{
+  padding:0;
+  margin:0;
+}
+body,i {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+nav{
+  float:left;
+  width:20vw;
+  height: 100vh;
+  background-color:#333;
+  min-width: 200px;
+}
+nav li{
+  list-style: none;
+  margin:25px 0;
+  float:right;
+  margin-right:50px;
+
+}
+nav *{
+  color:white;
+}
+nav li a{
+  padding:20px 10px;
+  height: 35px;
+  /* line-height: 35px; */
+  width: 100%;
+  /* display: inline-flex; */
+  text-decoration: none;
+  text-indent: 15px;
+}
+.arrow{
+  width:15px;
+  float: left;
+  float:left;
+  /* display:inline; */
+}
+nav a:hover{
+  font-weight:bold;
+  cursor:pointer;
+}
+footer{
+  position:absolute;
+  bottom:0;
 }
