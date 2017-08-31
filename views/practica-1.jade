@@ -1,6 +1,113 @@
 extends layout
-
 block content
-  h1= title
-  p Welcome to #{title}
-  
+    div.content
+        h3 Dirección IP
+        p Una dirección IP es una dirección de 32 bits, escrita generalmente con el formato de 4 números enteros separados por puntos.
+        p Los equipos comunican a través de Internet mediante el protocolo IP (Internet Protocol). Este protocolo utiliza direcciones numéricas denominadas direcciones IP compuestas por cuatro números enteros (4 bytes) entre 0 y 255, y escritos en el formato xxx.xxx.xxx.xxx. Por ejemplo, 194.153.205.26 es una dirección IP. 
+
+        br
+        h3 Tipos de Direcciones IP, (Rangos, Mascaras de Red etc) 
+        p   Las direcciones IP se dividen en clases, de acuerdo a la cantidad de bytes que representan la red.
+
+        h4 Clase de red A
+        p   Las redes disponibles de clase A son, por lo tanto, redes que van de 1.0.0.0 a 126.0.0.0 (los últimos bytes son ceros que indican que se trata seguramente de una red y no de equipos). 
+
+        h4 Clase de red B
+        p Las redes disponibles de la clase B son, por lo tanto, redes que van de 128.0.0.0 a 191.255.0.0. 
+
+        h4 Clase de red C
+
+        p Las redes disponibles de la clases C son, por lo tanto, redes que van de 192.0.0.0 a 223.255.255.0. 
+            
+        br
+        h3 MAC Address 
+        p Dirección del hardware de control de acceso a soportes de un distribuidor que identifica los equipos, los servidores, los routers u otros dispositivos de red. Consulte también Protección contra la falsificación de la dirección MAC.
+        p La dirección de control de acceso a soportes es un identificador único que está disponible en NIC y otros equipamientos de red. La mayoría de los protocolos de red usan IEEE: MAC-48, EUI-48 y EUI-64, que se diseñan para ser globalmente únicos. Un equipo en la red se puede identificar mediante sus direcciones MAC e IP.
+        La dirección de control de acceso a soportes es un identificador único que está disponible en NIC y otros equipamientos de red.
+
+        br
+        h3 ISP
+        p SP significa literalmente Internet service provider (en español, proveedor de servicios de Internet). Este es un servicio (en la mayoría de los casos pago) que permite conectarse a Internet. 
+
+        br
+        h3 Puertos bien conocidos
+        p Puertos bien conocidos (números del 0 al 1023): estos números se reservan para servicios y aplicaciones. Se utilizan comúnmente para aplicaciones como HTTP (servidor Web), protocolo de acceso a mensajes de Internet (IMAP) o protocolo simple de transferencia de correo (SMTP) (servidor de correo electrónico) y Telnet. Al definir estos puertos bien conocidos para las aplicaciones de los servidores, las aplicaciones cliente se pueden programar para solicitar una conexión a ese puerto en particular y el servicio relacionado.
+        br
+        h3 Protocolo TCP/IP
+        p TCP/IP es un conjunto de protocolos que permiten la comunicación entre los ordenadores pertenecientes a una red. La sigla TCP/IP significa Protocolo de control de transmisión/Protocolo de Internet y se pronuncia "T-C-P-I-P". Proviene de los nombres de dos protocolos importantes incluidos en el conjunto TCP/IP, es decir, del protocolo TCP y del protocolo IP. 
+
+        br
+        h3 Redireccionanimiento de Puertos
+        p La redirección de puertos, a veces llamado tunelado de puertos, es la acción de redirigir un puerto de red de un nodo de red a otro. Esta técnica puede permitir que un usuario externo tenga acceso a un puerto en una dirección IP privada (dentro de una LAN) desde el exterior vía un router con NAT activado.
+
+        br
+        h3 Servidor de Paginas WEB
+        p Un servidor Web es un programa que utiliza el protocolo de transferencia de hiper texto, HTTP (Hypertext Transfer Protocol), para servir los archivos que forman páginas Web a los usuarios, en respuesta a sus solicitudes, que son reenviados por los clientes HTTP de sus computadoras. Las computadoras y los dispositivos dedicados también pueden denominarse servidores Web.
+
+        br
+        h3 Puerta de Enlace
+        p Un gateway (puerta de enlace) es un dispositivo, con frecuencia un ordenador, que permite interconectar redes con protocolos y arquitecturas diferentes a todos los niveles de comunicación. Su propósito es traducir la información del protocolo utilizado en una red al protocolo usado en la red de destino.
+        p El gateway o «puerta de enlace» es normalmente un equipo informático configurado para dotar a las máquinas de una red local (LAN) conectadas a él de un acceso hacia una red exterior, generalmente realizando para ello operaciones de traducción de direcciones IP (NAT: Network Address Translation). Esta capacidad de traducción de direcciones permite aplicar una técnica llamada IP Masquerading (enmascaramiento de IP), usada muy a menudo para dar acceso a Internet a los equipos de una red de área local compartiendo una única conexión a Internet, y por tanto, una única dirección IP externa.
+
+        br
+        h3 Direcciones IP Publicas y Privadas
+        h4 IP Pública
+        p Es la que tiene asignada cualquier equipo o dispositivo conectado de forma directa a Internet.
+        p Algunos ejemplos son: los servidores que alojan sitios web como Google, los router o modems que dan a acceso a Internet, otros elementos de hardware que forman parte de su infraestructura, etc.
+        h4 IP Privada
+        p Se utiliza para identificar equipos o dispositivos dentro de una red doméstica o privada. En general, en redes que no sean la propia Internet y utilicen su mismo protocolo (el mismo "idioma" de comunicación).
+
+        br
+        h3 DNS
+        p Un servidor DNS (Domain Name System - Sistema de nombres de dominio) es un servidor que traduce nombres de dominio a IPs y viceversa. En las redes TCP/IP, cada PC dispone de una dirección IP para poder comunicarse con el resto de PCs. Es equivalente a las redes de telefonía en las que cada teléfono dispone de un número de teléfono que le identifica y le permite comunicarse con el resto de teléfonos.
+
+        br
+        h3 Firewall
+        p Un firewall es un dispositivo de seguridad de la red que monitorea el tráfico de red -entrante y saliente- y decide si permite o bloquea tráfico específico en función de un conjunto definido de reglas de seguridad.
+
+        br
+        h3 WebHosting y Dominio
+        h4 Nombre de Dominio:
+        p El nombre de dominio es como la “marca” que tendrá su empresa en internet, por ejemplo, si su empresa se llama “Mi Empresa” entonces el mejor nombre de dominio que puede registrar será www.miempresa.com
+        h4 Hosting o Almacenamiento:
+        p El hosting sirve para almacenar los archivos que conforman su página web, sus correos electrónicos, bases de datos, etc…Adicionalmente con el hosting usted puede instalar paquetes gratuitos como blogs, foros, etc…
+
+        br
+        h3 FTP
+        p El protocolo FTP es, como su nombre lo indica, un protocolo para transferir archivos. 
+
+        p La implementación del FTP se remonta a 1971 cuando se desarrolló un sistema de transferencia de archivos (descrito en RFC 141) entre equipos del Instituto Tecnológico de Massachusetts (MIT, Massachusetts Institute of Technology). Desde entonces, diversos documentos de RFC (petición de comentarios) han mejorado el protocolo básico, pero las innovaciones más importantes se llevaron a cabo en julio de 1973. 
+
+        p Actualmente, el protocolo FTP está definido por RFC 959 (protocolo de transferencia de archivos (FTP) - especificaciones). 
+
+
+        br
+        h3 HTML
+        p HTML, que significa Lenguaje de Marcado para Hipertextos (HyperText Markup Language) es el elemento de construcción más básico de una página web y se usa para crear y representar visualmente una página web. Determina el contenido de la página web, pero no su funcionalidad. Otras tecnologías distintas de HTML son usadas generalmente para describir la apariencia/presentación de una página web (CSS) o su funcionalidad (JavaScript).
+
+        br
+        h3 CSS
+        p Hojas de Estilo en Cascada (Cascading Style Sheets), es un mecanismo simple que describe cómo se va a mostrar un documento en la pantalla, o cómo se va a imprimir, o incluso cómo va a ser pronunciada la información presente en ese documento a través de un dispositivo de lectura. Esta forma de descripción de estilos ofrece a los desarrolladores el control total sobre estilo y formato de sus documentos.
+
+        br
+        h3 Bibliografia
+
+
+        li
+            a(href="http://es.ccm.net/contents/267-direccion-ip#cuales-son-las-direcciones-ip-especiales") http://es.ccm.net/contents/267-direccion-ip#cuales-son-las-direcciones-ip-especiales
+        li
+            a(href="https://www.symantec.com/es/mx/security_response/glossary/define.jsp?letter=m&word=mac-address") https://www.symantec.com/es/mx/security_response/glossary/define.jsp?letter=m&word=mac-address
+        li
+            a(href="http://es.ccm.net/contents/282-tcp-ip") http://es.ccm.net/contents/282-tcp-ip
+        li
+            a(href="http://searchdatacenter.techtarget.com/es/definicion/Servidor-Web") http://searchdatacenter.techtarget.com/es/definicion/Servidor-Web
+        li
+            a(href="http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m2/servidor_dns.html") http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m2/servidor_dns.html
+        li
+            a(href="https://www.cisco.com/c/es_mx/products/security/firewalls/what-is-a-firewall.html") https://www.cisco.com/c/es_mx/products/security/firewalls/what-is-a-firewall.html
+        li
+            a(href="http://es.ccm.net/contents/263-protocolo-ftp-protocolo-de-transferencia-de-archivos") http://es.ccm.net/contents/263-protocolo-ftp-protocolo-de-transferencia-de-archivos
+        li
+            a(href="https://developer.mozilla.org/es/docs/Web/HTML") https://developer.mozilla.org/es/docs/Web/HTML
+        li
+            a(href="http://www.w3c.es/Divulgacion/GuiasBreves/HojasEstilo") http://www.w3c.es/Divulgacion/GuiasBreves/HojasEstilo

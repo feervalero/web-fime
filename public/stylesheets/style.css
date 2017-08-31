@@ -49,3 +49,14 @@ footer{
   position:absolute;
   bottom:0;
 }
+.content{
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+.content li{
+  margin:5px;
+}
+.index-content{
+  padding:20px;
+  margin-left: 23vw;
+}
