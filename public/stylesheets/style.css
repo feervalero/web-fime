@@ -53,10 +53,19 @@ footer{
   max-height: 100vh;
   overflow-y: scroll;
 }
-.content li{
+.content li,.page li{
   margin:5px;
 }
 .index-content{
   padding:20px;
   margin-left: 23vw;
+}
+.page{
+  margin-left: 20vw;
+  
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+.page p{
+  margin:10px 0;
 }

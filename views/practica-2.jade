@@ -1,6 +1,80 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  
+  div.page
+    h1 Resumen del curso HTML5
+    p TML5 es una combinación de nuevas etiquetas de markup (lenguaje) HTML, propiedades CSS3, JavaScript y algunas tecnologías complementarias de apoyo, pero que técnicamente son independientes de la propia especificación HTML5. Por ello vamos a distinguir entre la especificación HTML5 en sí y la familia HTML5.
+    br
+    p Podemos definir la especificación HTML5 como nuevos elementos de markup o sintaxis, utilizados por los diseñadores para crear páginas web junto con las etiquetas utilizadas a día de hoy. Muchos de estos nuevos elementos ya son conocidos para los diseñadores que trabajan con las etiquetas HTML tradicionales, como &lt;p&gt;, &lt;ul&gt; o &lt;div&gt;. Estas nuevas etiquetas suponen para desarrolladores y diseñadores, unas herramientas más avanzadas y se traducen en mejores experiencias para el usuario final.
+    br
+    ul
+      li  
+        h4 Beneficios de HTML5
+        p Ofrece a los desarrolladores y diseñadores web una manera mas facil de hacer las cosas, anteriormente se tenian menos recursos para aprovechar todas las ventajas de utilizar nuevas etiquetas.
+        br
+      li  
+        h4 Principales características
+        p La familia HTML5 incluye las nuevas etiquetas y tecnologías como CSS3, Geolocalización, Almacenamiento Web (Web Storage), Web Workers y Web Sockets entre otras. 
+        br
+      li  
+        h4 Nuevos elementos de markup y presentación
+        p HTML5 dispone de unos cuantos elementos nuevos aparte de éste, como  &lt;footer&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;aside&gt;, y &lt;article&gt;. Estos nombres se basan en los que se vienen utilizando habitualmente para distinguir secciones dentro de las páginas web que vemos a diario (div id="footer", div id="nav", etc.).
+        br
+      li  
+        h4 Los elementos &lt;video&gt; , &lt;audio&gt; y &lt;canvas&gt;
+        p El tag &lt;video&gt; tag sirve para especificar video, tal como un clip de video o un stream dde video. Actualmente, hay 3 formatos para el elemento &lt;video&gt;: MP4, WebM, and Ogg:
+        video(src="./SampleVideo_360x240_2mb.mp4" controls)
+        br
+        p El tag &lt;audio&gt; define sonidos, como musica y otros streams de audio, hay 3 formatos de archivo soportados para el elemento &lt;audio&gt;: MP3, Wav, and Ogg.
+        audio(src="./sign-of-the-time.mp3" controls)
+        br
+        p El tag &lt;canvas&gt; es usado para dibujar graficos, via script (generalmente Javascript). 
+        canvas(id="canvas" width="150" height="150")
+        br
+      li  
+        h4 Formularios Web
+        p Los nuevos elementos de formulario de HTML, cuando se implementen, harán que el trabajo con formularios sea más sencillo que ahora. Por ejemplo, muchos diseñadores web necesitan crear formularios en donde los datos tienen que comprobarse antes de enviarlos al servidor. Es casi obligado que el usuario, por ejemplo, tenga que escribir una dirección de correo electrónico en un campo de un formulario. 
+        br
+      li  
+        h4 Geolocation
+        p La API de Geolocalización HTML se utiliza para localizar la posición de un usuario.
+        p La API de Geolocalización HTML se utiliza para obtener la posición geográfica de un usuario. Dado que esto puede comprometer la privacidad, la posición no está disponible a menos que el usuario lo apruebe.
+        br
+      li  
+        h4 Web Workers
+        p Cuando la ejecución de secuencias de comandos en una página HTML, la página no responde hasta que finalice la secuencia de comandos.
+        p Un trabajador de la web es un JavaScript que se ejecuta en segundo plano, de forma independiente de otras secuencias de comandos, sin afectar el rendimiento de la página. Puede seguir haciendo lo que quiera: clic, seleccionar cosas, etc., mientras que el trabajador web se ejecuta en segundo plano.
+        br
+      li  
+        h4 Almacenamiento Web (almacenamiento local)
+        p Con el almacenamiento local, las aplicaciones web pueden almacenar datos localmente en el navegador del usuario.
+
+        p Antes de HTML5, los datos de aplicación tuvieron que ser almacenada en las cookies, incluidos en cada petición del servidor. El almacenamiento local es más segura, y grandes cantidades de datos pueden ser almacenados localmente, sin afectar el rendimiento sitio web.
+
+        p A diferencia de las cookies, el límite de almacenamiento es mucho más grande (por lo menos 5 MB) y la información nunca se transfiere al servidor.
+
+        p El almacenamiento local es por origen (por dominio y protocolo). Todas las páginas, de un origen, se pueden almacenar y acceder a los mismos datos.
+
+      h2 Comentarios de los integrantes
+        h4 Fernando Valero Niño
+        p Dado que el mundo esta cambiando y la tecnologia forma parte importante de este cambio, la rama de la tecnologia referene a la WWW nos da la facilidad mediante sus tecnologias web un acercamiento muy oportuno al usuario. Antes era muy dificil el programar en varios lenguajes y conocerlo y explotarlos al maxico, hoy en dia las tecnologias web que tenemos nos ayudan no solo para crear contenido para la WWW si no que tambien sirven como base para la creacion de applicaciones y servicios computados en la nube.
+        p Todos estos puntos antes mencionados son la pieza fundamental de la programacion WEB y deben ser comprendidos para en un futuro poder aplicar alguna tecnologia utilizando estos elementos nativos de WEB.
+      br
+      br
+      h2 Bibliografia
+
+      li
+        a(href="https://www.w3schools.com/html/html5_geolocation.asp") https://www.w3schools.com/html/html5_geolocation.asp
+      li
+        a(href="https://www.w3schools.com/html/html5_canvas.asp") https://www.w3schools.com/html/html5_canvas.asp
+      li
+        a(href="https://www.w3schools.com/tags/tag_audio.asp") https://www.w3schools.com/tags/tag_audio.asp
+      li
+        a(href="https://www.w3schools.com/tags/tag_video.asp") https://www.w3schools.com/tags/tag_video.asp
+      li
+        a(href="https://www.w3schools.com/html/html5_webworkers.asp") https://www.w3schools.com/html/html5_webworkers.asp
+      li
+        a(href="https://www.w3schools.com/html/html5_webstorage.asp") https://www.w3schools.com/html/html5_webstorage.asp
+      br
+      br
+      script(src="smile.js")
